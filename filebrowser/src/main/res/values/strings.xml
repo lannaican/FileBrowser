@@ -1,0 +1,89 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">File Browser</string>
+    <string name="cut">剪切</string>
+    <string name="refresh">刷新</string>
+    <string name="paste">粘贴</string>
+    <string name="copy">复制</string>
+    <string name="filter">过滤</string>
+    <string name="sort">排序</string>
+    <string name="more">更多</string>
+    <string name="delete">删除</string>
+    <string name="rename">重命名</string>
+    <string name="share">分享</string>
+    <string name="new_folder">新目录</string>
+    <string name="root">根目录</string>
+    <string name="back">返回</string>
+    <string name="show_hidden_folders">Show Hidden Folders</string>
+    <string name="properties">Properties</string>
+    <string name="internal_storage" translatable="false">Int</string>
+    <string name="external_storage" translatable="false">Ext</string>
+    <string name="cancel">取消</string>
+    <string name="selectall">选择全部</string>
+    <string name="showfoldersize">Show Folder Size</string>
+    <string name="showhiddenfolder">Show Hidden Folders</string>
+    <string name="chooseitems">选择选项</string>
+    <string name="search">搜索</string>
+    <string name="searchfiles">搜索文件</string>
+    <string name="ok">确定</string>
+    <string name="filter_only">过滤唯一</string>
+    <string name="sort_by">通过分类</string>
+    <string name="file_info">%1$s 最好修改时间: %2$s</string>
+    <string name="read_only"> (只读)</string>
+    <!-- Folder creation-->
+    <string name="folder_creation_error">An error occurred while creating a new folder</string>
+    <string name="permission_error">No Write Permission Granted</string>
+    <!-- File deletion-->
+    <string name="delete_dialog_title">Delete files</string>
+    <string name="delete_dialog_message">Are you sure you want to delete %d items?</string>
+    <string name="delete_progress">Deleting Please Wait&#8230;</string>
+    <string name="delete_error">An error occurred while deleting</string>
+    <string name="no_items_selected">No Items selected</string>
+    <!-- Paste files-->
+    <string name="wait">Please Wait&#8230;</string>
+    <string name="copying">Copying %s</string>
+    <string name="moving">Moving %s</string>
+    <string name="pasting_error">An error occurred while pasting</string>
+    <!--Rename-->
+    <string name="rename_dialog_title">Rename</string>
+    <string name="rename_error">An error occurred while renaming</string>
+    <!-- getProperties-->
+    <string name="properties_title">Properties</string>
+    <string name="directory">Directory</string>
+    <string name="file">File</string>
+    <string name="file_type">Type: %s \n\n</string>
+    <string name="file_size">Size: %s \n\n</string>
+    <string name="file_modified">Last Modified %s \n\n</string>
+    <string name="file_path">Path %s</string>
+    <string name="file_type_multiple">Multiple Files \n\n</string>
+    <string name="file_type_plain">Type:</string>
+    <string name="property_error">Could Not Compute Properties</string>
+    <!-- sharing -->
+    <string name="sharing_no_app">No app found to handle sharing</string>
+    <string name="selected_items">Selected %d items</string>
+    <string name="selection_error_single">Please select only 1 item</string>
+
+    <string name="permission_request_error">No Permissions Requested</string>
+    <string name="error_common">Error</string>
+    <string name="error_no_permissions">Some permissions not granted!. App may not work properly!. Please grant the required permissions!</string>
+    <string name="no_operation_error">No operation selected</string>
+    <string name="no_files_paste">No files selected to paste</string>
+    <string name="no_app_to_handle">No app found to handle this type of file.</string>
+    <string name="select_multiple">多选</string>
+    <string name="external_storage_error">Cannot Locate External Store</string>
+    <string name="unselectall">全不选</string>
+    <string name="file_image">文件图片</string>
+    <string name="select">选中</string>
+    <string name="invalid_selections">Invalid selections</string>
+    <string-array name="filter_options">
+        <item>文件</item>
+        <item>目录</item>
+        <item>全部</item>
+    </string-array>
+
+    <string-array name="sort_options">
+        <item>名称</item>
+        <item>大小</item>
+        <item>最好修改时间</item>
+    </string-array>
+
+</resources>

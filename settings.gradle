@@ -1,0 +1,3 @@
+rootProject.name='FileBrowser'
+include ':app'
+include ':filebrowser'
