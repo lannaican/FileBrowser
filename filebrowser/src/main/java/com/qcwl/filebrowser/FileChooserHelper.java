@@ -39,11 +39,11 @@ public class FileChooserHelper {
         if (this.requestCode == requestCode && result == RESULT_OK && data != null) {
             if (callBack != null) {
                 if (mode == Constants.SELECTION_MODES.SINGLE_SELECTION) {
-                    ArrayList<Uri> selectedFiles = data.getParcelableArrayListExtra(Constants.SELECTED_ITEMS);
-                    callBack.onChoose(selectedFiles);
-                } else {
                     ArrayList<Uri> selectedFiles = new ArrayList<>();
                     selectedFiles.add(data.getData());
+                    callBack.onChoose(selectedFiles);
+                } else {
+                    ArrayList<Uri> selectedFiles = data.getParcelableArrayListExtra(Constants.SELECTED_ITEMS);
                     callBack.onChoose(selectedFiles);
                 }
                 callBack = null;
