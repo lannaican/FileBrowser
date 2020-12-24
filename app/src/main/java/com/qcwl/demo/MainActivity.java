@@ -26,6 +26,11 @@ public class MainActivity extends AppCompatActivity {
             public void onChoose(ArrayList<Uri> files) {
 
             }
+
+            @Override
+            public void onCancel() {
+
+            }
         });
     }
 

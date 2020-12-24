@@ -36,15 +36,19 @@ public class FileChooserHelper {
     }
 
     public void onActivityResult(int requestCode, int result, Intent data) {
-        if (this.requestCode == requestCode && result == RESULT_OK && data != null) {
+        if (this.requestCode == requestCode) {
             if (callBack != null) {
-                if (mode == Constants.SELECTION_MODES.SINGLE_SELECTION) {
-                    ArrayList<Uri> selectedFiles = new ArrayList<>();
-                    selectedFiles.add(data.getData());
-                    callBack.onChoose(selectedFiles);
+                if (result == RESULT_OK && data != null) {
+                    if (mode == Constants.SELECTION_MODES.SINGLE_SELECTION) {
+                        ArrayList<Uri> selectedFiles = new ArrayList<>();
+                        selectedFiles.add(data.getData());
+                        callBack.onChoose(selectedFiles);
+                    } else {
+                        ArrayList<Uri> selectedFiles = data.getParcelableArrayListExtra(Constants.SELECTED_ITEMS);
+                        callBack.onChoose(selectedFiles);
+                    }
                 } else {
-                    ArrayList<Uri> selectedFiles = data.getParcelableArrayListExtra(Constants.SELECTED_ITEMS);
-                    callBack.onChoose(selectedFiles);
+                    callBack.onCancel();
                 }
                 callBack = null;
             }
@@ -53,6 +57,7 @@ public class FileChooserHelper {
 
     public interface CallBack {
         void onChoose(ArrayList<Uri> files);
+        void onCancel();
     }
 
 }
